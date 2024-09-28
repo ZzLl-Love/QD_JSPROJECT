@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手风琴效果</title>
+    <link rel="stylesheet"  type="text/css" href="./css/index.css"/>
+</head>
+<body>
+    <div class = "item"></div>
+<script src="./js/index.js"></script>
+<script>
+    var item = document.querySelector(".item");
+    console.log(item)
+    item.onclick = function(){
+        createAnimation({
+            from: 300,
+            to: 100,
+            totalMs: 3000,
+            onMove: function(n){ // n 为这一次变化的值
+                item.style.height = n + 'px';
+                console.log
+            },
+            onEnd: function(){
+                // 变化完成后执行该函数
+                item.style.background = "red"
+
+            }
+        });
+    };
+
+</script>
+</body>
+</html>
