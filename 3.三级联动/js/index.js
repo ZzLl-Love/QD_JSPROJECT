@@ -1,3 +1,10 @@
+/**
+ * @timer 2024年9月19号 22点34分
+ * @Author: ZZ
+ * @day: 连续的第二天打卡
+ * @type {HTMLElement}
+ */
+
 // 省份 城市 学校 相关DOM结构
 let provinceParentDOM = document.getElementById("province");
 let cityParentDOM = document.getElementById("city");
